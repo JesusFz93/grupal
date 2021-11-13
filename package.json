@@ -1,0 +1,14 @@
+{
+  "name": "grupal",
+  "version": "1.0.0",
+  "description": "Luisa Huenca, Maria Perez, Jesus Fernandez",
+  "main": "index.js",
+  "author": "Luisa Huanca",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.7"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files='./*.html,./*.css'"
+  }
+}
