@@ -1,7 +1,11 @@
 {
   "name": "grupal",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Luisa Huanca, Maria Perez, Jesus Fernandez, Kevin Garcia, Elias Puchuri, Lulu Mendez",
+=======
+  "description": "Luisa Huanca, Maria Perez, Jesus Fernandez, Kevin Garcia",
+>>>>>>> 1e38ade06888809ed457dbbbb356996e77be413b
   "main": "index.js",
   "author": "Luisa Huanca",
   "license": "ISC",
