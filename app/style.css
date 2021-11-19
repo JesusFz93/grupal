@@ -2,7 +2,23 @@ body {
     background-color: lightblue;
 }
 
-.slider {
-    margin: 0px 25px 10px 25px;
+.slider{
+    margin: 0px 10px 0px 10px;
     padding: 80px;
+}
+
+
+.backgroundOur{
+    margin: 10px 0px 10px 0px;
+    background-color: grey; 
+}
+
+.ourtext{
+    margin: 0px 20px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    align-content: center;
 }
