@@ -61,25 +61,25 @@ const registrar = (e) => {
 }
 
 function login () {
-    const usuario = document.getElementById('usuario');
+    const username = document.getElementById('username');
     const password = document.getElementById('password');
 
     
     
-    if (usuario.value === '' || password.value === '') {
+    if (username.value === '' || password.value === '') {
         alert('Todos los campos son obligatorios');
     } else {
 
-        const usuarioObject = {
-            usuario: usuario.value,
+        const body = {
+            user: username.value,
             password: password.value,
         };
         
-        console.log(usuarioObject);
+        console.log(body);
 
-        usuario.value = '';
+        username.value = '';
         password.value = '';
 
-        usuario.focus();
+        username.focus();
     }
 }
