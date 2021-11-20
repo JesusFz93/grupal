@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.slider{
+    margin: 0px 10px 0px 10px;
+    padding: 80px;
+}
+
+
+.backgroundOur{
+    margin: auto;
+    background-color: grey;
+    height: 200px;
+}
+
+.ourtext{
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+p{
+    margin: 10px;
+    font-size: 1.2rem;
+}
