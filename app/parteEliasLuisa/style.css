@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
+/* ====================== VARIABLES ========================= */
+
+:root{
+    --header-height: 3.5rem; /* 1rem = 16px */
+
+    /* Colors (HSL) */
+    --hue: 194;
+    --first-color: hsl(var(--hue), 52%, 45%); /* Mas oscuro */
+    --first-color-alt: hsl(var(--hue), 52%, 30%);
+    --first-color-light: hsl(var(--hue), 52%, 80%);
+    --first-color-lighten: hsl(var(--hue), 52%, 95%); /* Mas claro */
+    --title-color:hsl(var(--hue), 15%, 15%);
+    --text-color: hsl(var(--hue), 15%, 25%);
+    --text-color-light:hsl(var(--hue), 15%, 50%);
+    --body-color:hsl(var(--hue), 52%, 86%);
+    --container-color: #fff;
+
+    /* Font and typography */
+    --body-font:'Prompt', sans-serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .9rem;
+    --small-font-size: .8rem;
+    --smaller-font-size: .7rem;
+
+    /* Font Weight */
+    --font-medium:500;
+    --font-semi-bold:600;
+
+    /* Margin bottom */
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /* z-index */
+    --z-tooltop: 10;
+    --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+    :root{
+        /* Font and typography */
+        --big-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .85rem;
+        --smaller-font-size: .8rem;
+    }       
+}
+
+/* ====================== GENERALES ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:hsl(194, 52%, 86%) ;
+    font-family:'Prompt', sans-serif;
+}
+
+header{
+    height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: hsl(194, 52%, 86%);
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    padding-top: 4rem;
+}
+
+img{
+    width: 100%;
+}
+body, button, input, textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+h1{font-size: var(--h1-font-size)}
+h2{font-size: var(--h2-font-size)}
+h3{font-size: var(--h3-font-size)}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ====================== NAV ========================= */
+.nav{
+    display: flex;
+    max-width:1366px;
+    position: relative;
+    top:1.15rem;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav__logo{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nav__logo:hover{
+    color: var(--first-color-alt);
+    transition: .3s;
+}
+
+.nav__logo-icon{
+    font-size: 1.2rem;
+    position: relative;
+    top: 4px;
+}
+
+.nav__list{
+    width:30%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav__item{
+    font-weight: 600;
+}
+
+.nav__toggle{
+    font-weight: 600;
+    display:none;
+    position: relative;
+    top: 4px;
+}
+
+.scroll{
+    box-shadow: 0 1px 5px hsl(193, 17%, 26%);
+}
+
+/* ====================== SLIDER ========================= */
+
+.slider{
+    display: flex;
+    width: 50%;
+    position: relative;
+    left:25%;
+    margin: 2rem 0;
+}
+
+.slider-img{
+    border-radius: 10px;
+}
+
+/* ====================== SOLICITADOS ========================= */
+
+.solicitados{
+    display:flex;
+    margin:3rem 0 0 0;
+    padding:3rem 0 0 0;
+    flex-direction:column;
+    background-color: var(--container-color);
+}
+.solicitados__content{
+    display: flex;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    background-color: var(--body-color);
+    
+}
+.card:hover{
+    transform: translateY(-.25rem);
+    box-shadow: .25rem .25rem .25rem var(--first-color-alt);
+}
+
+.card-img{
+    width: 80%;
+}
+
+.card__desc{
+    margin-top:1.5rem;
+    width: 70%;
+
+}
+
+.card__desc-icon{
+    position:relative;
+    font-size: 150%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--first-color);
+    padding: .7rem;
+    left: 115%;
+    bottom: 50px;
+}
+
+.card__desc-icon:hover{
+    color: #fff;
+    background-color: var(--first-color-alt);
+}
+
+.productos{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    left: calc(50% - 50px);
+}
+
+/* ====================== NAV ========================= */
+/* ====================== NAV ========================= */
+/* ====================== NAV ========================= */
+/* ====================== MEDIA QUERYS========================= */
+
+@media screen and (max-width: 760px){
+
+    .nav__list{
+        position: fixed;
+        background-color: #fff;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        box-shadow: 0 1px 5px hsl(193, 17%, 26%);
+        padding: 4rem 0 0 3rem;
+        border-radius: 1rem 0 0 1rem;
+        transition: .3s;
+    }
+
+    .nav__toggle{
+        display: block;
+    }   
+    
+    .slider{
+        width: 80%;
+        left: 10%;
+    }
+
+    .solicitados__content{
+        flex-direction:column;
+    }
+
+    .card{
+        margin: 2rem 0;
+    }
+
+    
+    
+}
+
+@media screen and (min-width:1367px) {
+    .nav{
+        left: calc(50% - 683px);
+    }   
+
+    .card{
+        margin: 2rem;
+    }
+
+}
